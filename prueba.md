@@ -1,0 +1,41 @@
+# Titulo1
+
+## Titulo2
+
+**NEGRITA**
+
+*CURSIVA*
+
+***NEGRITA Y CURSIVA***
+
+> ME LO CONTARON Y LO OLVIDE, LO VI Y LO ENTENDI, Y FINALMENTE LO HICE Y LO APRENDÍ
+
+>>>HOLAAAAA
+
+- ELEMENTO UNO
+- ELEMENTO DOS
+1. ELEMENTO NUMERADO
+    - ELEMENTO DENTRO DE ELEMENTO
+2. ELEMENTO NUMERADO 2
+
+---
+
+
+ENLACE A [GITHUB](https://github.com/ASIR2-SGD)
+
+![PERRETE](https://cdn.pixabay.com/photo/2019/04/10/23/51/animal-4118585_960_720.jpg)
+
+|CABEZERA|HEADER|
+|--------|------|
+|DATOS1  |DATOS2|
+
+COMANDO
+
+```BASH
+$UFW ACCEPT 55/TCP
+```
+
+```JSON
+{"firstname": "Julia",
+"lastname": "Pérez"}
+```
