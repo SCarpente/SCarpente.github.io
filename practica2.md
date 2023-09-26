@@ -2,7 +2,7 @@
 
 ## Introducción
 
-La seguridad de nuestro sistema puede verse amenazada.  Una buena politica de contraseñas reforzaria la seguridad. El objetivo de la practica es aprender y configurar las directrices de seguridad, para ello utilizaremos el modulo pam pw_password.
+La seguridad de nuestro sistema puede verse amenazada.  Una buena politica de contraseñas reforzaria la seguridad. El objetivo de la practica es aprender y configurar las directrices de seguridad, para ello utilizaremos el modulo pam pw_quality.
 
 ## Desarrollo
 
@@ -12,5 +12,5 @@ La seguridad de nuestro sistema puede verse amenazada.  Una buena politica de co
   
 * Configuración
 
-        /etc/security
+        /etc/security/pw-----.conf
 * Verificación
