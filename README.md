@@ -6,7 +6,7 @@
 
 *[Practica3 Permisos + Reglas ACL](./practica3.md)
 
-*[Pactica4](./practica4.md)
+*[Practica4](./practica4.md)
 
 *[Practica5](./practica5.md)
 
