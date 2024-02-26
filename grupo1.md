@@ -622,6 +622,8 @@ client {
 
 Con estas configuraciones, FreeRADIUS está listo para autenticar a través de LDAP. Asegúrate de ajustar las credenciales y las direcciones IP según las necesidades de tu entorno. Luego, reinicia el servicio FreeRADIUS para aplicar los cambios:
 
+```bash
 sudo service freeradius restart
+```
 
 Ahora, el servidor FreeRADIUS debería autenticar clientes utilizando el servidor LDAP especificado. Verifica el funcionamiento y realiza pruebas de autenticación para asegurarte de que todo esté configurado correctamente.
