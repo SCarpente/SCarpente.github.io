@@ -50,6 +50,14 @@ Configuración punto de acceso
 
 3. Configuración del Virtual Host
 
+**RADIUS**
+
+1. Configuración del Módulo LDAP
+
+2. Configuración del Sitio Predeterminado
+
+3. Configuración del Cliente RADIUS
+
 ---
 --- 
 # Introducción
