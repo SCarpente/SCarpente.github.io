@@ -10,6 +10,10 @@ services:
       - ./zm/db:/var/lib/mysql
     environment:
       - MYSQL_DATABASE=zm
+      - MYSQL_ROOT_PASSWORD=zmproyecto
+      - MYSQL_USER=zm
+      - MYSQL_PASSWORD=zmproyecto
+      - TZ=Europe/Madrid
     env_file:
       - ./.env
 
