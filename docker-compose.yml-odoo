@@ -1,24 +1,32 @@
-version: '3.1'
+version: '2'
 services:
-  web:
-    image: odoo:17.0
+  db:
+    image: postgres:15
+    user: root
+    environment:
+      - POSTGRES_USER=santi
+      - POSTGRES_PASSWORD=odoo     
+      - POSTGRES_DB=postgres
+    restart: always 
+    volumes:
+        - ./postgresql:/var/lib/postgresql/data
+
+  odoo16:
+    image: odoo:16
+    user: root
     depends_on:
       - db
     ports:
       - "8069:8069"
-    volumes:
-      - odoo-web-data:/var/lib/odoo
-      - ./config:/etc/odoo
-      - ./addons:/mnt/extra-addons
-  db:
-    image: postgres:15
+    tty: true
+    command: --
     environment:
-      - POSTGRES_DB=postgressanti
-      - POSTGRES_PASSWORD=odoosanti
-      - POSTGRES_USER=odoosanti
-      - PGDATA=/var/lib/postgresql/data/pgdata
+      - HOST=db
+      - USER=santi
+      - PASSWORD=odoo
     volumes:
-      - odoo-db-data:/var/lib/postgresql/data/pgdata
-volumes:
-  odoo-web-data:
-  odoo-db-data:
+      # - ./entrypoint.sh:/entrypoint.sh   # if you want to install additional Python packages, uncomment this line!
+      - ./addons:/mnt/extra-addons
+      - ./etc:/etc/odoo
+    restart: always 
+    
